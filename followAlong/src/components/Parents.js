@@ -9,17 +9,16 @@ class Parents extends React.Component {
     return (
       <section className="parents">
         <familyContext.Consumer>
-          return <>
-            {family => {
-              console.log('bk: family: ', family)
-              family.parents.map(p => (
+          {family => {
+            return <>
+              {family.parents.map(p => (
                 <div className="person" key={p.name}>
                   <img width="150" src={p.img} alt={p.name} />
                   <strong>{p.name}</strong>
                 </div>
-              ))
-            }}
-          </>
+              ))}
+            </>
+          }}
         </familyContext.Consumer>
       </section>
     );
