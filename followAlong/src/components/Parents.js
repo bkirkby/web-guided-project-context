@@ -12,7 +12,7 @@ class Parents extends React.Component {
           {family => {
             console.log('bk: PArents.js: render: family: ', family)
             {
-              this.props.family.parents.map(p => (
+              family.parents.map(p => (
                 <div className="person" key={p.name}>
                   <img width="150" src={p.img} alt={p.name} />
                   <strong>{p.name}</strong>
