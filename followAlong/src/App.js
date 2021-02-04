@@ -7,7 +7,7 @@ import "./styles.scss";
 
 export default function App() {
   const [families] = useState(data);
-  const [activeFamily, setActiveFamily] = useState(families[0]);
+  const [activeFamily, setActiveFamily] = useState(families[1]);
 
   return (
     <div className="App">
