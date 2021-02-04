@@ -11,6 +11,15 @@ class Parents extends React.Component {
         <familyContext.Consumer>
           {family => {
             console.log('bk: PArents.js: render: family: ', family)
+            {
+              this.props.family.parents.map(p => (
+                <div className="person" key={p.name}>
+                  <img width="150" src={p.img} alt={p.name} />
+                  <strong>{p.name}</strong>
+                </div>
+              ))
+            }
+
           }}
 
           {/* {this.props.family.parents.map(p => (
