@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 
+import { familyContext } from '../App';
+
 const Siblings = (props) => {
+  const [value] = useContext(familyContext);
   return (
     <section className="parents">
       {props.family.siblings.map((p) => (
