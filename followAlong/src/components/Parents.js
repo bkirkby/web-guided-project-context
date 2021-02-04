@@ -19,7 +19,6 @@ class Parents extends React.Component {
                 </div>
               ))
             }
-
           }}
 
           {/* {this.props.family.parents.map(p => (
