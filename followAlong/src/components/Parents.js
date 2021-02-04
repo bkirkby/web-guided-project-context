@@ -2,10 +2,10 @@ import React from 'react';
 
 import { familyContext } from '../App';
 
-console.log('bk: Parents.js: familyContext: ', familyContext)
 
 class Parents extends React.Component {
   render() {
+    console.log('bk: Parents.js: familyContext: ', familyContext)
     return (
       <section className="parents">
         {this.props.family.parents.map(p => (
