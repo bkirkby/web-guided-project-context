@@ -2,7 +2,7 @@ import React from 'react';
 
 import { familyContext } from '../App';
 
-const Parents = props => {
+const Parents = () => {
   return (
     <section className="parents">
       <familyContext.Consumer>
