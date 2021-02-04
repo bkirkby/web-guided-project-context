@@ -6,7 +6,7 @@ import Siblings from "./Siblings";
 export default function FamilyTree(props) {
   return (
     <section className="FamilyTree">
-      <h1>{props.family.familyName}</h1>
+      <h1>{props.familyName}</h1>
       <h2>Parents</h2>
 
       {/* Pass data down as a prop */}
