@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 
 import { familyContext } from '../App';
 
-const Siblings = (props) => {
+const Siblings = () => {
   // const value = useContext(familyContext);
   const family = useContext(familyContext);
 
