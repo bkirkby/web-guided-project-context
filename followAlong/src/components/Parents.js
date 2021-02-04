@@ -10,6 +10,7 @@ class Parents extends React.Component {
       <section className="parents">
         <familyContext.Consumer>
           {family => {
+            console.log('bk: family: ', family)
             family.parents.map(p => (
               <div className="person" key={p.name}>
                 <img width="150" src={p.img} alt={p.name} />
