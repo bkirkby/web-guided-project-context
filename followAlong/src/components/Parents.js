@@ -8,15 +8,15 @@ class Parents extends React.Component {
     console.log('bk: Parents.js: familyContext: ', familyContext)
     return (
       <section className="parents">
-        {/* <familyContext.Consumer> */}
+        <familyContext.Consumer>
 
-        {this.props.family.parents.map(p => (
+          {/* {this.props.family.parents.map(p => (
           <div className="person" key={p.name}>
             <img width="150" src={p.img} alt={p.name} />
             <strong>{p.name}</strong>
           </div>
-        ))}
-        {/* </familyContext.Consumer> */}
+        ))} */}
+        </familyContext.Consumer>
       </section>
     );
   }
