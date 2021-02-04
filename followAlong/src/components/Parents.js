@@ -32,7 +32,7 @@ const func1b = () => (
   "hi"
 );
 
-const func2a = () => { "hi" }
+const func2a = () => { return "hi" }
 const func2b = () => {
   return "hi"
 };
