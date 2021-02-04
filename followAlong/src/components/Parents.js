@@ -29,6 +29,7 @@ export default Parents;
 
 const func1 = () => "hi";
 
+const func2 = () => { "hi" }
 const func2 = () => {
   return "hi"
 };
