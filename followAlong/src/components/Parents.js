@@ -9,8 +9,8 @@ class Parents extends React.Component {
     return (
       <section className="parents">
         <familyContext.Consumer>
-          {family => {
-            return <>
+          {family => (
+            <>
               {family.parents.map(p => (
                 <div className="person" key={p.name}>
                   <img width="150" src={p.img} alt={p.name} />
@@ -18,7 +18,7 @@ class Parents extends React.Component {
                 </div>
               ))}
             </>
-          }}
+          )}
         </familyContext.Consumer>
       </section>
     );
