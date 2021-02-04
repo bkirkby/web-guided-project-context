@@ -9,7 +9,7 @@ class Parents extends React.Component {
     return (
       <section className="parents">
         <familyContext.Consumer>
-          <>
+          return <>
             {family => {
               console.log('bk: family: ', family)
               family.parents.map(p => (
