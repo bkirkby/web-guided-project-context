@@ -27,7 +27,10 @@ class Parents extends React.Component {
 
 export default Parents;
 
-const func1 = () => "hi";
+const func1a = () => "hi";
+const func1b = () => (
+  "hi"
+);
 
 const func2a = () => { return "hi" }
 const func2b = () => {
