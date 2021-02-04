@@ -9,6 +9,9 @@ class Parents extends React.Component {
     return (
       <section className="parents">
         <familyContext.Consumer>
+          {family => {
+            console.log('bk: PArents.js: render: family: ', family)
+          }}
 
           {/* {this.props.family.parents.map(p => (
           <div className="person" key={p.name}>
