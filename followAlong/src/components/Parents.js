@@ -29,7 +29,7 @@ export default Parents;
 
 const func1 = () => "hi";
 
-const func2 = () => { "hi" }
-const func2 = () => {
+const func2a = () => { "hi" }
+const func2b = () => {
   return "hi"
 };
