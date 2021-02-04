@@ -1,6 +1,5 @@
 import React from 'react';
 
-// const Parents = props => {
 class Parents extends React.Component {
   render() {
     return (
