@@ -21,7 +21,7 @@ const Gameboard = props => {
     <>
       <h1>this is our game</h1>
       <div style={{ backgroundColor: 'red', width: '200px', height: '200px' }}></div>
-      <Scoreboard scores={props.scores} />
+      <Scoreboard />
     </>
   )
 }
