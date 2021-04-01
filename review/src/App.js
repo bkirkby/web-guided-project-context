@@ -39,8 +39,8 @@ const App = (props) => {
   }, []);
 
   return (
-    <ScoreContext.Provider>
-      <Gameboard scores={scores} />
+    <ScoreContext.Provider value={scores}>
+      <Gameboard />
     </ScoreContext.Provider>
   )
 };
