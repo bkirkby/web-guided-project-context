@@ -21,15 +21,21 @@ export const ScoreContext = createContext();
 class Scoreboard extends React.Component {
   render() {
     return (
-      <>
-        {scores.map(playerScore => (
-          <>
-            <h3 className="playerName">{playerScore.name}</h3>
-            <div className="score">first:{playerScore.first}</div>
-            <div className="score">second:{playerScore.second}</div>
-          </>
-        ))}
-      </>
+      <ScoreContext.Consumer>
+        <>
+          {scores => {
+            {
+              scores.map(playerScore => (
+                <>
+                  <h3 className="playerName">{playerScore.name}</h3>
+                  <div className="score">first:{playerScore.first}</div>
+                  <div className="score">second:{playerScore.second}</div>
+                </>
+              ))
+            }
+          }}
+        </>
+      </ScoreContext.Consumer>
     )
   }
 }
