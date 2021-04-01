@@ -5,7 +5,7 @@ const Scoreboard = props => {
     <>
       {props.scores.map(playerScore => (
         <>
-          <div className="playerName">{playerScore.name}</div>
+          <h3 className="playerName">{playerScore.name}</h3>
           <div className="score">first:{playerScore.first}</div>
           <div className="score">second:{playerScore.second}</div>
         </>
