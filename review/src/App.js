@@ -1,5 +1,19 @@
 import React, { useState, useEffect } from 'react';
 
+const ScoreBoard = props => {
+  return (
+    <>
+      {props.scores.map(playerScore => (
+        <>
+          <div className="playerName">{playerScore.name}</div>
+          <div className="score">first:{playerScore.first}</div>
+          <div className="score">second:{playerScore.second}</div>
+        </>
+      ))}
+    </>
+  )
+}
+
 const Gameboard = props => {
   return (
     <>
