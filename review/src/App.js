@@ -58,7 +58,7 @@ const App = (props) => {
     // api calls
     setScores([
       { name: 'ann', first: 8, second: 12 },
-      { name: 'biran', first: 7, score: 9 }
+      { name: 'biran', first: 7, second: 9 }
     ])
   }, []);
 
