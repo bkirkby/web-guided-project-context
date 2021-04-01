@@ -3,9 +3,11 @@ import React, { useState, useEffect, createContext, useContext } from 'react';
 export const ScoreContext = createContext();
 
 const Scoreboard = props => {
+  const scores = useContext(ScoreContext);
+
   return (
     <>
-      {props.scores.map(playerScore => (
+      {scores.map(playerScore => (
         <>
           <h3 className="playerName">{playerScore.name}</h3>
           <div className="score">first:{playerScore.first}</div>
