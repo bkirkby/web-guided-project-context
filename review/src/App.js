@@ -2,7 +2,7 @@ import React, { useState, useEffect, createContext, useContext } from 'react';
 
 export const ScoreContext = createContext();
 
-const Scoreboard = props => {
+const Scoreboard = () => {
   const scores = useContext(ScoreContext);
 
   return (
