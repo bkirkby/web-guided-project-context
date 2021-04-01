@@ -29,7 +29,7 @@ export default function App() {
       </section>
       {activeFamily && (
         <familyContext.Provider value={activeFamily}>
-          <FamilyTree family={activeFamily} />
+          <FamilyTree familyName={activeFamily.familyName} />
         </familyContext.Provider>
       )}
     </div>
