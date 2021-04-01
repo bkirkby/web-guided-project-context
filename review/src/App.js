@@ -2,20 +2,36 @@ import React, { useState, useEffect, createContext, useContext } from 'react';
 
 export const ScoreContext = createContext();
 
-const Scoreboard = () => {
-  const scores = useContext(ScoreContext);
+// const Scoreboard = () => {
+//   const scores = useContext(ScoreContext);
 
-  return (
-    <>
-      {scores.map(playerScore => (
-        <>
-          <h3 className="playerName">{playerScore.name}</h3>
-          <div className="score">first:{playerScore.first}</div>
-          <div className="score">second:{playerScore.second}</div>
-        </>
-      ))}
-    </>
-  )
+//   return (
+//     <>
+//       {scores.map(playerScore => (
+//         <>
+//           <h3 className="playerName">{playerScore.name}</h3>
+//           <div className="score">first:{playerScore.first}</div>
+//           <div className="score">second:{playerScore.second}</div>
+//         </>
+//       ))}
+//     </>
+//   )
+// }
+
+class Scoreboard extends React.Component {
+  render() {
+    return (
+      <>
+        {scores.map(playerScore => (
+          <>
+            <h3 className="playerName">{playerScore.name}</h3>
+            <div className="score">first:{playerScore.first}</div>
+            <div className="score">second:{playerScore.second}</div>
+          </>
+        ))}
+      </>
+    )
+  }
 }
 
 const Gameboard = props => {
