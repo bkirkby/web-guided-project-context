@@ -1,7 +1,7 @@
 import React from "react";
 import familyContext from '../contexts/familyContext';
 
-const Siblings = (props) => {
+const Siblings = () => {
   const { siblings } = useContext(familyContext);
 
   return (
