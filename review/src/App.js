@@ -1,5 +1,7 @@
 import React, { useState, useEffect, createContext, useContext } from 'react';
 
+export const ScoreContext = createContext();
+
 const Scoreboard = props => {
   return (
     <>
@@ -36,7 +38,11 @@ const App = (props) => {
     ])
   }, []);
 
-  return (<Gameboard scores={scores} />)
+  return (
+    <ScoreContext.Provider>
+      <Gameboard scores={scores} />
+    </ScoreContext.Provider>
+  )
 };
 
 export default App;
