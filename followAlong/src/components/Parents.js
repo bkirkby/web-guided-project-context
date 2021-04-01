@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Parents = props => {
+const Parents = (props) => {
   return (
     <section className="parents">
       {props.family.parents.map(p => (
