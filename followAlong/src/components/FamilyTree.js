@@ -16,7 +16,7 @@ export default function FamilyTree(props) {
       <h2>Siblings</h2>
 
       {/* Siblings will consume data from Context using render props */}
-      <Siblings family={props.family} />
+      <Siblings />
     </section>
   );
 }
