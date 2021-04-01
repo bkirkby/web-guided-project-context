@@ -22,8 +22,8 @@ class Scoreboard extends React.Component {
   render() {
     return (
       <ScoreContext.Consumer>
-        <>
-          {scores => {
+        {scores => (
+          <>
             {
               scores.map(playerScore => (
                 <>
@@ -33,8 +33,8 @@ class Scoreboard extends React.Component {
                 </>
               ))
             }
-          }}
-        </>
+          </>
+        )}
       </ScoreContext.Consumer>
     )
   }
