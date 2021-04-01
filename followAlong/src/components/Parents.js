@@ -1,5 +1,5 @@
 import React from 'react';
-
+// refactor as class
 const Parents = (props) => {
   return (
     <section className="parents">
